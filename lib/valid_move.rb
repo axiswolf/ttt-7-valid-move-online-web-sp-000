@@ -2,7 +2,7 @@
 valid_move = nil
 def valid_move?(board, index)
   # return true if move valid, false or nil if not valid
-  if (index >= 0 && index < 8 && position_taken?board,index == false) || (index < 8 && index > 0 && board == [" ", " ", " ", " ", " ", " ", " ", " ", " "])
+  if (index >= 0 && index < 8 && position_taken?(board,index) == false) || (index < 8 && index > 0 && board == [" ", " ", " ", " ", " ", " ", " ", " ", " "])
     valid_move = true
   else
     valid_move = false
